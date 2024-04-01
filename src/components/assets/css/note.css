@@ -1,0 +1,78 @@
+.postIt{
+	background-color:lightgreen;
+	border-radius:5px;
+	box-shadow:10px 10px 10px lightgray;
+	width:300px;
+	height:300px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+}
+.postIt:hover{
+	background-color:rgb(195,246,195);
+}
+.postIt p{
+	margin:0;
+}
+.postIt .title{
+	padding:12px;
+}
+.postIt .title p{
+	cursor:pointer;
+	text-align:center;
+	font-size:25px;
+	overflow:hidden;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.postIt .title p:hover{
+	text-decoration:underline;
+}
+.postIt .title p:active{
+	color:white;
+}
+
+.postIt .note p{
+	text-align:center;
+	overflow:hidden;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+.postIt .details{
+	width:300px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	/* padding:10px 15px 10px 15px; */
+}
+
+.postIt .details span{
+	margin:0 8px;
+	padding:5px;
+}
+.postIt .details .optionsButton span{
+	cursor:pointer;
+}
+.postIt .details .optionsButton span:active{
+	color:white;
+}
+.optionsList{
+	position:absolute;
+	width:80px;
+	height:80px;
+	background-color:rgb(195,246,195);
+	border-radius:5px;
+	box-shadow:10px 10px 10px lightgray;
+}
+.optionsList .options{
+	padding:10px;
+}
+.optionsList .options p{
+	cursor:pointer;
+}
+.optionsList .options p:active{
+	color:white;
+}

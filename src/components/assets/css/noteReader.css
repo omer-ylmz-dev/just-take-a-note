@@ -1,0 +1,77 @@
+.backGround{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.1);
+}
+.noteReader{
+	background-color:white;
+	position:relative;
+	width:70%;
+	height:70%;
+	border-radius:8px;
+	border:8px solid lightgreen;
+	outline:5px solid black;
+	display:flex;
+	flex-direction:column;
+	justify-items:center;
+	align-items:center;
+	justify-content:space-between;
+}
+.noteReader .title{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-left:9px;
+}
+.noteReader .title h1{
+	padding:5px;
+}
+.noteReader .note{
+	display:flex;
+	flex-direction:column;
+	border-top:1px solid black;
+	margin:0 8px 0 8px;
+	padding:10px 0 0 0;
+	width:100%;
+	height:79%;
+}
+.noteReader .note span{
+	padding:5px;
+	overflow:auto;
+	width:100%;
+	height:100%;
+}
+.noteReader .noteDetails{
+	width:100%;
+	background-color:lightgreen;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.noteReader .details .creatingDate{
+	margin:3px;
+}
+.exitButton{
+	cursor:pointer;
+	margin:5px;
+}
+.exitButton:active{
+	color:rgb(240,240,240);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: white; 
+}
+::-webkit-scrollbar-thumb {
+  background: lightgreen; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(240,240,240); 
+}
